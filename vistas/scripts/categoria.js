@@ -21,11 +21,23 @@ function limpiar(){
 function mostrarform(flag){
     limpiar();
     if(flag){
-        $("#listadoresgistros").hide();
+        $("#listadoregistros").hide();
         $("#formularioregistros").show();
         $("#btnGuardar").prop("disabled",false);
         $("#btnagregar").hide();
+    }else{
+        $("#listadoregistros").show();
+        $("#formularioregistros").hide();
+        $("#btnagregar").show();
     }
 }
+
+//function para cancelar el formulario
+function cancelarform(){
+    limpiar();
+    mostrarform(false);
+}
+//implementamos la funcion listar los registros de la tabla categoria
 //Implementamos la funcion init que me permite mostrar el fomrulario
+
 init();
