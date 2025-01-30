@@ -6,7 +6,7 @@ require_once "../modelos/Categoria.php";
 $categoria=new Categoria();
 
 //declaramos las variables para procesar los datos del formulario
-$idcategoria=isset($_POST["idcategoia"])? limpiarCadena($_POST['idcategoria']):"";
+$idcategoria=isset($_POST["idcategoria"])? limpiarCadena($_POST['idcategoria']):"";
 $nombre=isset($_POST["nombre"])? limpiarCadena($_POST['nombre']):"";
 $descripcion=isset($_POST["descripcion"])? limpiarCadena($_POST['descripcion']):"";
 
